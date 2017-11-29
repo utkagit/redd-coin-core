@@ -18,27 +18,14 @@ https://docs.docker.com/compose/install/
 
 docker build -t reddcoin-core -f Dockerfile-reddcore .
 
-// build reddcoin-seeder image:
-
-docker build -t reddcoin-dnsseed -f Dockerfile-redd-dnsseed .
 
 # step 3
-
-// edit docker-compose.yml
-
-// change the following line: "entrypoint: /git/reddcoin-seeder/dnsseed -h localhost -n localhost -p 53"
-
-// A dns record should be set (ask Gnasher for it) let's say its "seeder123.reddcoin.com" and your external IP is 82.41.11.91
-
-entrypoint: /git/reddcoin-seeder/dnsseed -h seeder123.reddcoin.com -n 82.41.11.91 -p 53
-
-# step 4
 
 Make sure that all the needed ports are opened on your linux machine and on your external firewall/router/ACL
 
 # step 5
 
-// Run the Reddcoin-core along with Reddcoin-dnsseed
+// Run the Reddcoin-core 
 
 docker-compose up
 
