@@ -52,8 +52,13 @@ It might not be the best thing to do, so don't do it if your machine can handle 
 
 # Getting inside the container if needed :
 
-'docker ps'          #will show you the running docker containers - the first thing "f14fd4gf564x" (exmaple) is the container id
+//first run the command:
 
-'docker exec -it f14fd4gf564x /bin/bash'
+docker ps          
 
-You'll find youself inside of the container - just remember that PID 1 - which means that the container will exit the moment you stop the reddcoin service
+//will show you the running docker containers - the first thing "f14fd4gf564x" (exmaple) is the container id
+//using this output, run the command:
+
+docker exec -it f14fd4gf564x /bin/bash
+
+//You'll find youself inside of the container - just remember that PID 1 - which means that the container will exit the moment you stop the reddcoin service
