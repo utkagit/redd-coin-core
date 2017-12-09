@@ -49,3 +49,11 @@ To go around it you'll have to create a swap file
 
 You can clone https://github.com/utkagit/reddcoin-data to get a more or less up to date blockchain and copy the files to ./redd-data-dir
 It might not be the best thing to do, so don't do it if your machine can handle the load when reddcoin-core is syncing with the blockchain
+
+# Getting inside the container if needed :
+
+docker ps    # will show you the running docker containers - the first thing "f14fd4gf564x" (exmaple) is the container id
+
+docker exec -it f14fd4gf564x /bin/bash
+
+You'll find youself inside of the container - just remember that PID 1 - which means that the container will exit the moment you stop the reddcoin service
