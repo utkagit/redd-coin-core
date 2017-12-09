@@ -52,7 +52,7 @@ It might not be the best thing to do, so don't do it if your machine can handle 
 
 # Getting inside the container if needed :
 
-docker ps    # will show you the running docker containers - the first thing "f14fd4gf564x" (exmaple) is the container id
+docker ps          #will show you the running docker containers - the first thing "f14fd4gf564x" (exmaple) is the container id
 
 docker exec -it f14fd4gf564x /bin/bash
 
