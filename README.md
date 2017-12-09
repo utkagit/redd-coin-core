@@ -1,4 +1,4 @@
-# reddcoin_core_and_seeder
+# reddcoin_core
 
 # Step 1
 
